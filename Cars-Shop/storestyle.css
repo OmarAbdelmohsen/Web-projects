@@ -1,0 +1,282 @@
+*
+{
+  margin: 0 ;
+  padding:0;
+}
+body
+{
+    background-color: black;
+}
+div.slider
+{
+    width: 50px;
+    position: relative;
+    margin:auto;
+    
+}
+div.slider div.info img
+{
+  width: 1000px;
+  height: 500px;
+  margin: auto;
+  margin-left: -445px ;
+  margin-top: 50px;
+}
+
+.text
+{
+  text-align: center;
+  font-size: 15px;
+  position: absolute;
+  width: 100%;
+  padding: 8px 16px;
+  bottom: 8px;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-size: 35px;
+}
+.prev, .next
+{
+  position: absolute;
+  top: 58%;
+  color: #f2f2f2;
+  font-weight: bold;
+  padding: 10px 10px;
+  font-size: 18px;
+}
+.next
+{
+  right: -500px;
+
+}
+.prev
+{
+  right: 460px;
+}
+.prev:hover, .next:hover
+{
+  color:black;
+}
+
+div.doters
+{
+  text-align: center;
+  ;
+  
+}
+div.doters span.dots
+{
+  width: 2px;
+  height: 2px;
+  display: inline-block;
+  background:white;
+  padding: 5px;
+  border-radius: 50%;
+  
+}
+.active, .dots:hover
+{
+  background: gray;
+}
+
+div.slider div.info
+{
+  display: none;
+ 
+}
+div.slider div.fade
+{
+  animation-name: fade;
+  animation-duration: 0.5s;
+
+}
+@keyframes fade
+{
+  from{opacity: 0.4;}
+  to{opacity: 1}
+
+}
+
+div.ground
+{
+    margin: 0;
+    padding: 0;
+    margin-left:210px;
+    margin-right:300px;
+    margin-top: 6%;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 800px;
+    background-position: center;
+    
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+
+}
+div.ground div.cards
+{
+    
+    
+    display: inline-block;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background: #b8b8b8;
+    border-radius: 5%;
+    border: 1px solid black;
+    overflow: hidden;
+}
+div.ground div.cards input.info2, .toggle
+{
+    position: absolute;
+  
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    right: 10px;
+    outline: none;
+    z-index: 10;
+}
+
+ div.ground div.cards input.info2
+{
+    opacity: 0;
+}
+ div.ground div.cards div.toggle
+{
+    pointer-events: none;
+    border-radius: 50%;
+    background: #000000;
+    transition: 0.5s;
+    text-align: center;
+    line-height: 50px;
+    font-size: 36px;
+    color: #ffffff;
+    box-shadow: 0 0 0 0px #3f3d3f;
+}
+div.ground div.cards:hover
+{
+    background: white;
+}
+div.ground div.cards input.info2:checked ~ .toggle
+{
+    box-shadow: 0 0 0 500px #3f3d3f;
+    transform: rotate(225deg)
+}
+
+div.ground div.cards div.imgBx, div.ground div.cards div.content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+div.ground div.cards div.content
+{
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 11;
+    font-size: 20px;
+    color: #ffffff;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+div.ground div.cards input.info2:checked ~ .content
+{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+div.ground div.cards div.content h1
+{
+    margin-bottom: 5px;
+
+}
+div.ground div.cards div.content h1
+{
+    margin: 0;
+    padding: 0;
+}
+div.ground div.cards div.button1 a img
+{
+    display: block;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    background: #000000;
+    text-align: center;
+    border-radius: 50%;
+    
+    width: 50px;
+    height: 50px;
+    bottom: 10px;
+    right: 70px;
+
+}
+
+div.list ul.first
+{   
+    float: right;
+    margin-top: 30px;
+    display: flex; 
+    
+}
+
+div.list ul.first li
+{
+    list-style: none;
+    transition: 0.5s;
+    margin: 0 20px;
+    
+}
+div.list ul.first li a
+{
+    color: white;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    transition: 0.5s;
+}
+div.list ul.first li.border a
+{
+  color: orange;
+}
+div.list ul.first:hover li a
+{
+  
+  transform: scale(1.5);
+  opacity: .2;
+  filter: blur(1px);
+}
+div.list ul.first li a:hover
+{
+  
+  transform: scale(2);
+  opacity: 1;
+  filter: blur(0);
+}
+
+div.list div.logo
+{
+  float: left;
+  margin-top: 30px;
+}
+div.list
+{
+  max-width: 1200px;
+  margin: auto;
+}
+
+

@@ -1,0 +1,156 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+div.first, div.sec, div.third
+{
+    display: flex;
+    align-items: center;
+    
+    font-weight: bold;
+    width: 100%;
+    font-family: big john;
+    height: 100vh;
+    
+    
+}
+img.first
+{
+    margin-left: -270px;
+    margin-top: 60px;
+    float: right;
+    width: 300px;
+    height: 200px;
+}
+h2.first
+{
+    font-size: 60px;
+    margin-left: 50px;
+    margin-top: 300px;
+    color: white;
+    
+}
+h2.second
+{
+    font-size: 60px;
+    margin-left: 1075px;
+    margin-top: -100px;
+     
+    
+
+    color: black;
+    
+}
+img.second
+{
+    margin-left: -160px;
+    margin-top: -330px;
+    
+    width: 160px;
+    height: 160px;
+    
+    
+
+}
+h2.third
+{
+    font-size: 60px;
+    margin-left: 180px;
+    margin-top: 300px;
+    
+     
+  
+    color:white;
+    
+}
+img.third
+{
+    margin-left: -230px;
+    margin-top: 90px;
+    float: right;
+    width: 350px;
+    height: 200px;
+    
+}
+div.first
+{
+    background-image: url(mera.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+div.sec
+{
+    background-image: url(BMW.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+div.third
+{
+    background-image: url(audi.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+div.first div.list ul.first
+{   
+    float: right;
+    margin-top: 30px;
+    display: flex;
+    height: 650px;
+    
+    
+    
+    
+    
+}
+
+div.first div.list ul.first li
+{
+    list-style: none;
+    transition: 0.5s;
+    margin: 0 20px;
+    
+}
+div.first div.list ul.first li a
+{
+    color: white;
+    display: block;
+    text-decoration: none;
+ 
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    transition: 0.5s;
+}
+div.first div.list ul.first li.border a
+{
+  color: orange;
+}
+div.first div.list ul.first:hover li a
+{
+  
+  transform: scale(1.5);
+  opacity: .2;
+  filter: blur(1px);
+}
+div.first div.list ul.first li a:hover
+{
+  
+  transform: scale(2);
+  opacity: 1;
+  filter: blur(0);
+}
+
+div.first div.list div.logo
+{
+  float: left;
+  margin-top: 30px;
+}
+div.first div.list
+{
+  max-width: 1200px;
+  margin: auto;
+}
